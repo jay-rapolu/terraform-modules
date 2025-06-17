@@ -19,8 +19,8 @@ This module is used for creating aws ec2 instance using terraform
 
 ```
 module "ec2"{
-    source = "../terraform-modules/terraform-aws-instance"
-    sg_ids = ["sg-0397920120499858a"]
+    source = "path-to-terraform-module-dir"
+    sg_ids = ["sg-id"]
     tags = {
         Name = "EC2 Module Test"
     }
